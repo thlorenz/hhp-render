@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Renders PokerHands parsed with hhp to different formats, i.e. PokerStars and message boards.",
   "main": "hhp-render.js",
+  "bin": {
+    "hhp-render": "./bin/hhp-render"
+  },
   "scripts": {
     "test": "set -e; for t in test/*.js; do node $t; done"
   },

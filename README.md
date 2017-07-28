@@ -2,6 +2,18 @@
 
 Renders PokerHands parsed with hhp to different formats, i.e. PokerStars and message boards.
 
+## Usage 
+
+```sh
+hhp-render <source-dir> <target-dir> --noreveal
+
+  Converts hand histories inside source dir to
+  PokerStars format and writes them to the target dir.
+
+  If --noreveal is NOT supplied revealed hands will be
+  included as mucked hands.
+```
+
 ```js
 const parse = require('hhp')
 const { renderPokerStars } = require('hhp')
@@ -10,6 +22,10 @@ const hand = parse(txt)
 const rendered = render(hand)
 console.log(rendered) // prints hand in PokerStars format
 ```
+
+## Status
+
+Renders to PokerStars at this point.
 
 ## Installation
 

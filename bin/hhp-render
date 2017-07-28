@@ -1,0 +1,51 @@
+#!/usr/bin/env node
+
+const path = require('path')
+const fs = require('fs')
+
+const hhp = require('hhp')
+const { renderPokerStars } = require('../')
+
+function usage(err) {
+console.error(`
+${err}
+usage: hhp-render <source-dir> <target-dir> --noreveal
+
+  Converts hand histories inside source dir to
+  PokerStars format and writes them to the target dir.
+
+  If --noreveal is NOT supplied revealed hands will be
+  included as mucked hands.
+`)
+process.exit(1)
+}
+
+if (process.argv.length < 4) {
+  usage('Please supply source and target directories\n')
+}
+const indir = path.resolve(process.argv[2])
+const outdir = path.resolve(process.argv[3])
+if (!fs.existsSync(indir)) usage(`Source dir ${indir} not found!\n`)
+if (!fs.existsSync(outdir)) usage(`Target dir ${outdir} not found!\n`)
+const muckRevealed = !(process.argv.indexOf('--noreveal') > 0)
+console.error(`Will ${muckRevealed ? '' : 'not '}include revealed hands as mucks.`)
+
+function convert(handTxt) {
+  const hand = hhp(handTxt)
+  const rendered = renderPokerStars(hand, { muckRevealed })
+  return rendered
+}
+
+const files = fs.readdirSync(indir)
+
+for (var i = 0; i < files.length; i++) {
+  const file = files[i]
+  const fullPath = path.join(indir, file)
+  const txt = fs.readFileSync(fullPath, 'utf8')
+  const hands = hhp.extractHands(txt)
+  console.error('Converting %d hand from "%s"', hands.length,  file)
+  const converted = hands.map(convert)
+
+  const outfile = path.join(outdir, file)
+  fs.writeFileSync(outfile, converted.join('\n'), 'utf8')
+}
