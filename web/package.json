@@ -1,0 +1,53 @@
+{
+  "name": "hhp-render-web",
+  "version": "0.0.0",
+  "description": "Web site to demo hhp render.",
+  "main": "hhp-render.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com.com:pokertell/hhp-render.git"
+  },
+  "homepage": "https://github.com.com/pokertell/hhp-render",
+  "browserify": {
+    "transform": [
+      [
+        "bubleify",
+        {
+          "target": {
+            "chrome": 48,
+            "firefox": 44,
+            "node": 6,
+            "safari": 9,
+            "edge": 12
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "debug": "~2.6.3",
+    "hha": "~0.5.0",
+    "hhp": "~0.5.1"
+  },
+  "devDependencies": {
+    "browserify": "~13.0.0",
+    "bubleify": "~0.6.0",
+    "budo": "~9.2.2",
+    "documentation": "~4.0.0-beta.18",
+    "livereactload": "~3.2.0",
+    "tape": "~4.5.1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Thorsten Lorenz",
+    "email": "thlorenz@gmx.de",
+    "url": "http://thlorenz.com"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com.com/thlorenz/hhp-render/blob/master/LICENSE"
+  },
+  "engine": {
+    "node": ">=6"
+  }
+}

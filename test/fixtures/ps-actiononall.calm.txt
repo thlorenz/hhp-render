@@ -1,0 +1,65 @@
+PokerStars Hand #165839911178: Tournament #1817537543, $4.10+$0.40 USD Hold'em No Limit - Level I (10/20) - 2017/02/07 13:37:48 ET
+Table '1817537543 6' 9-max Seat #3 is the button
+Seat 1: nocika950933 (1658 in chips) 
+Seat 2: EricBolis (1484 in chips) 
+Seat 3: bad rai (1454 in chips) 
+Seat 4: colster42 (1434 in chips) 
+Seat 5: CiuvasLT88 (1494 in chips) 
+Seat 6: renniweg (1494 in chips) 
+Seat 7: Trustnobody1 (1494 in chips) 
+Seat 8: mindymoo47 (1494 in chips) 
+Seat 9: YujiMatsui17 (1494 in chips) 
+nocika950933: posts the ante 3
+EricBolis: posts the ante 3
+bad rai: posts the ante 3
+colster42: posts the ante 3
+CiuvasLT88: posts the ante 3
+renniweg: posts the ante 3
+Trustnobody1: posts the ante 3
+mindymoo47: posts the ante 3
+YujiMatsui17: posts the ante 3
+colster42: posts small blind 10
+CiuvasLT88: posts big blind 20
+*** HOLE CARDS ***
+Dealt to renniweg [5h 9c]
+renniweg: folds 
+Trustnobody1: folds 
+mindymoo47: calls 20
+YujiMatsui17: folds 
+nocika950933: calls 20
+EricBolis: folds 
+bad rai: folds 
+colster42: calls 10
+CiuvasLT88: checks 
+*** FLOP *** [3s 7d Ah]
+colster42: checks 
+CiuvasLT88: checks 
+mindymoo47: bets 40
+nocika950933: calls 40
+colster42: calls 40
+CiuvasLT88: calls 40
+*** TURN *** [3s 7d Ah] [3d]
+colster42: checks 
+CiuvasLT88: checks 
+mindymoo47: checks 
+nocika950933: checks 
+*** RIVER *** [3s 7d Ah 3d] [7s]
+colster42: checks 
+CiuvasLT88: bets 180
+mindymoo47: folds 
+nocika950933: folds 
+colster42: folds 
+Uncalled bet (180) returned to CiuvasLT88
+CiuvasLT88 collected 267 from pot
+*** SUMMARY ***
+Total pot 267 | Rake 0 
+Board [3s 7d Ah 3d 7s]
+Seat 1: nocika950933 folded on the River
+Seat 2: EricBolis folded before Flop (didn't bet)
+Seat 3: bad rai (button) folded before Flop (didn't bet)
+Seat 4: colster42 (small blind) folded on the River
+Seat 5: CiuvasLT88 (big blind) collected (267)
+Seat 6: renniweg folded before Flop (didn't bet)
+Seat 7: Trustnobody1 folded before Flop (didn't bet)
+Seat 8: mindymoo47 folded on the River
+Seat 9: YujiMatsui17 folded before Flop (didn't bet)

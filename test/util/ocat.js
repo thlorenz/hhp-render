@@ -1,6 +1,6 @@
 var ocat = require('ocat')
 ocat.opts = {
-  prefix: '  spok(t, txt.trim().split(\'\\n\'),\n',
+  prefix: '  spok(t, res,\n',
   suffix: ')',
   indent: '   ',
   depth: 5

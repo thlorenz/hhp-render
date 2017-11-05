@@ -2,7 +2,28 @@
 
 Renders PokerHands parsed with hhp to different formats, i.e. PokerStars and message boards.
 
-## Usage 
+## Usage
+
+```js
+const parse = require('hhp')
+const analyze = require('hha')
+const { script } = require('hha')
+const { renderHtml } = require('hhp-render')
+
+const txt = fs.readFileSync(file, 'utf8')
+const parsed = parse(txt)
+const analyzed = analyze(parsed)
+const hand = script(analyzed)
+const rendered = renderHtml(hand)
+console.log(rendered) // prints hand in html format
+```
+
+## Status
+
+Renders to html, different forums and PokerStars.
+Note that _only_ for PokerStars a binary interface has been exposed.
+Also all renderers require a script produced with `hha` except for PokerStars which renders a hand that was parsed with
+`hhp` but not analyzed.
 
 ```sh
 hhp-render <source-dir> <target-dir> --noreveal
@@ -13,19 +34,6 @@ hhp-render <source-dir> <target-dir> --noreveal
   If --noreveal is NOT supplied revealed hands will be
   included as mucked hands.
 ```
-
-```js
-const parse = require('hhp')
-const { renderPokerStars } = require('hhp')
-const txt = fs.readFileSync('ignition-hand.txt', 'utf8')
-const hand = parse(txt)
-const rendered = render(hand)
-console.log(rendered) // prints hand in PokerStars format
-```
-
-## Status
-
-Renders to PokerStars at this point.
 
 ## Installation
 
@@ -46,6 +54,55 @@ Renders an hhp parsed hand in PokerStars format.
     -   `$0.muckRevealed` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?** if `true` includes cards revealed via Ignition as mucks (optional, default `true`)
 
 Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** hand rendered to be importable as PokerStars hand
+
+### renderHtml
+
+Renders an hhp parsed + hha anazlyzed + scripted and then summarized hand
+to HTML format.
+
+**Parameters**
+
+-   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the configuration of the renderer
+    -   `$0.text` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** text to start with (optional, default `''`)
+    -   `$0.hand` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the parsed then analyzed and then scripted hand
+    -   `$0.amountAsBB` **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?** show all amounts in big blind dominatians (optional, default `false`)
+    -   `$0.showHeroCards` **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?** show hero cards as part of hands (i.e. don't hide in spoilers) (optional, default `true`)
+
+Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** the rendered hand
+
+### renderFacebook
+
+Renders an hhp parsed + hha anazlyzed + scripted and then summarized hand
+to facebook format.
+
+**Parameters**
+
+-   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the configuration of the renderer (same as `renderHtml`)
+
+Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** the rendered hand
+
+### forums.renderTwoPlusTwo
+
+Renders an hhp parsed + hha anazlyzed + scripted and then summarized hand
+to 2+2 forum format.
+
+**Parameters**
+
+-   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the configuration of the renderer (same as `renderHtml`)
+
+Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** the rendered hand
+
+### forums.renderPocketFives
+
+Renders an hhp parsed + hha anazlyzed + scripted and then summarized hand
+to pocket fives forum format
+PokerXFactor, CardRunners, IntelliPoker formats are identical.
+
+**Parameters**
+
+-   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the configuration of the renderer (same as `renderHtml`)
+
+Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** the rendered hand
 
 ## License
 

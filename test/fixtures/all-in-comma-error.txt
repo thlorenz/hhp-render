@@ -1,0 +1,58 @@
+PokerStars Hand #159581804013: Tournament #1689829479, $3.19+$0.31 USD Hold'em No Limit - Level I (10/20) - 2016/10/06 22:51:26 ET
+Table '1689829479 2' 9-max Seat #5 is the button
+Seat 1: norgas69 (1448 in chips)
+Seat 2: jaygee1984 (1575 in chips)
+Seat 3: renniweg (1084 in chips)
+Seat 4: p_coxinha (1428 in chips)
+Seat 5: MasterQkiu (853 in chips)
+Seat 6: Oterbach (1844 in chips)
+Seat 7: SilveradoSP (1488 in chips)
+Seat 8: trips1126 (2312 in chips)
+Seat 9: grmpjb (1468 in chips)
+norgas69: posts the ante 3
+jaygee1984: posts the ante 3
+renniweg: posts the ante 3
+p_coxinha: posts the ante 3
+MasterQkiu: posts the ante 3
+Oterbach: posts the ante 3
+SilveradoSP: posts the ante 3
+trips1126: posts the ante 3
+grmpjb: posts the ante 3
+Oterbach: posts small blind 10
+SilveradoSP: posts big blind 20
+*** HOLE CARDS ***
+Dealt to renniweg [2d 9h]
+MasterQkiu said, "nh donk"
+trips1126: calls 20
+grmpjb: calls 20
+norgas69: raises 117 to 137
+jaygee1984: folds
+renniweg: folds
+p_coxinha: raises 1288 to 1425 and is all-in
+MasterQkiu: calls 850 and is all-in
+Oterbach: folds
+SilveradoSP: folds
+trips1126: folds
+grmpjb: folds
+norgas69: calls 1288
+*** FLOP *** [Ks Jh 4c]
+*** TURN *** [Ks Jh 4c] [6h]
+*** RIVER *** [Ks Jh 4c 6h] [3h]
+*** SHOW DOWN ***
+norgas69: shows [Qh As] (high card Ace)
+p_coxinha: shows [Td Tc] (a pair of Tens)
+p_coxinha collected 1150 from side pot
+MasterQkiu: shows [Ah Ad] (a pair of Aces)
+MasterQkiu collected 2647 from main pot
+*** SUMMARY ***
+Total pot 3797 Main pot 2647. Side pot 1150. | Rake 0
+Board [Ks Jh 4c 6h 3h]
+Seat 1: norgas69 showed [Qh As] and lost with high card Ace
+Seat 2: jaygee1984 folded before Flop (didn't bet)
+Seat 3: renniweg folded before Flop (didn't bet)
+Seat 4: p_coxinha showed [Td Tc] and won (1150) with a pair of Tens
+Seat 5: MasterQkiu (button) showed [Ah Ad] and won (2647) with a pair of Aces
+Seat 6: Oterbach (small blind) folded before Flop
+Seat 7: SilveradoSP (big blind) folded before Flop
+Seat 8: trips1126 folded before Flop
+Seat 9: grmpjb folded before Flop

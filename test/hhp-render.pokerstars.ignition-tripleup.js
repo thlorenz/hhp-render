@@ -1,3 +1,5 @@
+'use strict'
+
 const test = require('tape')
 const spok = require('spok')
 const fs = require('fs')

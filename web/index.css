@@ -1,0 +1,11 @@
+.hand-history-table {
+  table-layout: fixed;
+}
+
+.rendered-cell,
+.txt-cell {
+  overflow-x  : scroll;
+  white-space: pre-line;
+  padding: 20px;
+  border: 1px solid;
+}
