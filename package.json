@@ -15,13 +15,15 @@
   },
   "homepage": "https://github.com/thlorenz/hhp-render",
   "dependencies": {
-    "ordinal": "~1.0.2"
+    "ordinal": "~1.0.2",
+    "simple-format-number": "~0.1.2"
   },
   "devDependencies": {
-    "hhp": "~0.4.0",
+    "hha": "~0.7.1",
+    "hhp": "~0.5.2",
     "ocat": "~0.1.0",
-    "spok": "~0.8.1",
-    "tape": "~4.7.0"
+    "spok": "~0.9.0",
+    "tape": "~4.8.0"
   },
   "keywords": [],
   "author": {

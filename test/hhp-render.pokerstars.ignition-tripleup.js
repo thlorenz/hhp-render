@@ -1,9 +1,10 @@
+'use strict'
+
 const test = require('tape')
 const spok = require('spok')
 const fs = require('fs')
 const path = require('path')
-const hpfixtures = path.join(path.dirname(require.resolve('hhp')), 'test', 'fixtures')
-const holdemig = path.join(hpfixtures, 'holdem', 'ignition')
+const fixtures = path.join(__dirname, 'fixtures')
 
 /* eslint-disable no-unused-vars */
 const ocat = require('./util/ocat')
@@ -13,7 +14,7 @@ const parse = require('hhp')
 const render = require('../').renderPokerStars
 
 test('\npokerstars: ignition triple-up', function(t) {
-  const txt = fs.readFileSync(path.join(holdemig, 'sng-sidepot.txt'), 'utf8')
+  const txt = fs.readFileSync(path.join(fixtures, 'sng-sidepot.txt'), 'utf8')
   const hand = parse(txt)
   const rendered = render(hand)
   spok(t, rendered.trim().split('\n'),
