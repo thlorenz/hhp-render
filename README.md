@@ -7,14 +7,16 @@ Renders PokerHands parsed with hhp to different formats, i.e. PokerStars and mes
 ```js
 const parse = require('hhp')
 const analyze = require('hha')
-const { script } = require('hha')
+const { script, summary } = require('hha')
 const { renderHtml } = require('hhp-render')
 
 const txt = fs.readFileSync(file, 'utf8')
 const parsed = parse(txt)
 const analyzed = analyze(parsed)
-const hand = script(analyzed)
-const rendered = renderHtml(hand)
+const scripted = script(analyzed)
+const summarized = summarize(scripted)
+
+const rendered = renderHtml({ summary })
 console.log(rendered) // prints hand in html format
 ```
 
