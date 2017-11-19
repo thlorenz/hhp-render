@@ -66,7 +66,7 @@ to HTML format.
 
 -   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the configuration of the renderer
     -   `$0.text` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** text to start with (optional, default `''`)
-    -   `$0.hand` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the parsed then analyzed and then scripted hand
+    -   `$0.summary` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the parsed then analyzed, scripted and summarized
     -   `$0.amountAsBB` **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?** show all amounts in big blind dominatians (optional, default `false`)
     -   `$0.showHeroCards` **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?** show hero cards as part of hands (i.e. don't hide in spoilers) (optional, default `true`)
 
