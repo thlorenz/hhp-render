@@ -1,0 +1,29 @@
+PokerStars No-Limit Hold'em, 4.5 Tournament, 10/20 Blinds 3 Ante (9 handed)
+
+MP1 (t1,390)
+MP2 (t1,173)
+Hero (MP3) (t2,071)
+CO (t1,461)
+Button (t1,461)
+SB (t1,471)
+BB (t1,491)
+UTG (t1,491)
+UTG+1 (t1,491)
+
+[color=#009B00][b]Hero's M[/b]: 36.33[/color]
+
+[b]Preflop[/b]: Hero is MP3 with K[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/heart.gif[/img], 7[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/club.gif[/img]
+[color=#CC3333]UTG raises to t60[/color], [color=#666666][i]2 folds[/i][/color], MP2 calls t60, [color=#666666][i]1 fold[/i][/color], CO calls t60, [color=#666666][i]1 fold[/i][/color], SB calls t50, [color=#CC3333]BB raises to t1,488 (All-In)[/color], [color=#666666][i]3 folds[/i][/color], SB calls t1,408 (All-In)
+
+[b]Flop[/b]: (t3,143) 2[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/diamond.gif[/img], 3[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/heart.gif[/img], 7[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/spade.gif[/img] [color=#009B00](2 players, 2 all-in)[/color]
+
+[b]Turn[/b]: (t3,143) Q[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/club.gif[/img] [color=#009B00](2 players, 2 all-in)[/color]
+
+[b]River[/b]: (t3,143) 9[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/diamond.gif[/img] [color=#009B00](2 players, 2 all-in)[/color]
+
+[b]Total pot:[/b] t3,143
+
+Results:
+SB had J[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/heart.gif[/img], J[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/diamond.gif[/img] (one pair, Jacks).
+BB had K[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/diamond.gif[/img], A[img]http://handhistoryconverter.com/wp-content/uploads/2015/12/club.gif[/img] (high card, Ace).
+Outcome: SB won t3,143

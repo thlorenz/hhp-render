@@ -9,6 +9,7 @@
   "scripts": {
     "test": "set -e; for t in test/*.js; do node $t; done"
   },
+  "files": [ "hhp-render.js", "lib/*", "bin/*" ],
   "repository": {
     "type": "git",
     "url": "git://github.com/thlorenz/hhp-render.git"
